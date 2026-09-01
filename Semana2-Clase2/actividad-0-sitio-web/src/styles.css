@@ -1,0 +1,91 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  color: #1e293b;
+  background: #ffffff;
+  line-height: 1.5;
+}
+
+a { text-decoration: none; color: inherit; }
+
+.pagina { display: flex; flex-direction: column; min-height: 100vh; }
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2.5rem;
+  background: #0f172a;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.header .marca { font-size: 1.3rem; font-weight: 800; letter-spacing: 0.5px; }
+.header nav { display: flex; gap: 1.75rem; }
+.header nav a { font-size: 0.95rem; opacity: 0.85; transition: opacity 0.2s; }
+.header nav a:hover { opacity: 1; }
+.header .btn-cta-small {
+  background: #38bdf8; color: #0f172a; border: none;
+  padding: 0.5rem 1.1rem; border-radius: 6px; font-weight: 700; cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #fff;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+.hero h1 { font-size: 2.6rem; font-weight: 800; margin-bottom: 1rem; }
+.hero p.subtitulo { font-size: 1.15rem; color: #cbd5e1; max-width: 640px; margin: 0 auto 2rem; }
+.hero .botones { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.btn-primario {
+  background: #38bdf8; color: #0f172a; border: none;
+  padding: 0.85rem 1.8rem; border-radius: 8px; font-weight: 700; font-size: 1rem; cursor: pointer;
+}
+.btn-secundario {
+  background: transparent; color: #fff; border: 2px solid #fff;
+  padding: 0.8rem 1.75rem; border-radius: 8px; font-weight: 700; font-size: 1rem; cursor: pointer;
+}
+
+/* Servicios */
+.servicios { padding: 4rem 2.5rem; text-align: center; }
+.servicios h2 { font-size: 2rem; margin-bottom: 2.5rem; }
+.servicios-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem; max-width: 1000px; margin: 0 auto;
+}
+.servicio-card {
+  border: 1px solid #e2e8f0; border-radius: 12px; padding: 2rem 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.servicio-card:hover { transform: translateY(-4px); box-shadow: 0 10px 25px rgba(0,0,0,0.08); }
+.servicio-card .icono { font-size: 2.2rem; margin-bottom: 0.75rem; }
+.servicio-card h3 { font-size: 1.15rem; margin-bottom: 0.5rem; }
+.servicio-card p { color: #64748b; font-size: 0.95rem; }
+
+/* Testimoniales */
+.testimoniales { background: #f8fafc; padding: 4rem 2.5rem; text-align: center; }
+.testimoniales h2 { font-size: 2rem; margin-bottom: 2.5rem; }
+.testimoniales-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem; max-width: 1000px; margin: 0 auto;
+}
+.testimonio-card {
+  background: #fff; border-radius: 12px; padding: 1.75rem;
+  border: 1px solid #e2e8f0; text-align: left;
+}
+.testimonio-card p.comentario { font-style: italic; color: #334155; margin-bottom: 1rem; }
+.testimonio-card .autor { font-weight: 700; font-size: 0.95rem; }
+.testimonio-card .cargo { color: #64748b; font-size: 0.85rem; }
+
+/* Footer */
+.footer {
+  background: #0f172a; color: #cbd5e1; padding: 2.5rem;
+  display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem;
+  margin-top: auto; font-size: 0.9rem;
+}
+.footer .enlaces { display: flex; gap: 1.25rem; }
