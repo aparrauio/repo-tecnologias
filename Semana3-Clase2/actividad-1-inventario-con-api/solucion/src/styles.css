@@ -1,0 +1,17 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0f172a; color: #f1f5f9; }
+.app { max-width: 960px; margin: 0 auto; padding: 2.5rem 1.5rem; }
+h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+.subtitulo { color: #94a3b8; margin-bottom: 2rem; }
+.resumen { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+.resumen-card { background: #1e293b; border: 1px solid #334155; border-radius: 10px; padding: 1.25rem; }
+.resumen-card .etiqueta { color: #94a3b8; font-size: 0.85rem; margin-bottom: 0.4rem; }
+.resumen-card .valor { font-size: 1.6rem; font-weight: 700; }
+.resumen-card .nota { color: #64748b; font-size: 0.8rem; margin-top: 0.3rem; }
+table { width: 100%; border-collapse: collapse; background: #1e293b; border-radius: 10px; overflow: hidden; }
+thead { background: #273548; }
+th, td { padding: 0.75rem 1rem; text-align: left; font-size: 0.9rem; }
+th { color: #94a3b8; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.05em; }
+tbody tr:not(:last-child) { border-bottom: 1px solid #334155; }
+.stock-bajo { color: #f87171; font-weight: 700; }
+.categoria-pill { display: inline-block; padding: 0.2rem 0.6rem; border-radius: 999px; background: #334155; font-size: 0.75rem; }

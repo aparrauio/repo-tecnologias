@@ -1,0 +1,24 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: #0f172a;
+  color: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.app { max-width: 560px; padding: 2.5rem; text-align: center; }
+h1 { font-size: 1.6rem; margin-bottom: 1.5rem; }
+.chiste-card {
+  background: #1e293b; border: 1px solid #334155; border-radius: 10px;
+  padding: 1.75rem; font-size: 1.1rem; line-height: 1.5; min-height: 100px;
+  display: flex; align-items: center; justify-content: center;
+}
+.error { color: #f87171; }
+button {
+  margin-top: 1.5rem; padding: 0.75rem 1.5rem; border-radius: 8px; border: none;
+  background: #38bdf8; color: #0f172a; font-weight: 700; font-size: 1rem; cursor: pointer;
+}
+button:hover { background: #0ea5e9; }
